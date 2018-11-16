@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>Story</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+ <p class="bannerImage"><img src="scienceThings.png" alt="Science Things"/></p>
+	 <div class="navigation">
+<ul>
+	<li><a href="ScientificMethod.html">The Scientific Method </a></li>
+	<li><a href="ChemicalBonds.html">Chemical Bonds</a></li>
+	<li><a href="story.html">The Owner and the Dog</a></li>
+	<li><a href="https://sciencebob.com/science-fair-ideas/the-scientific-method/">
+	Science Bob- The Scientific Method</a></li>
+	<li><a href="https://www.khanacademy.org/science/biology/chemistry--of-life/chemical-bonds-and-reactions/a/chemical-bonds-article">Khan Academy Chemical Bonds</a></li>
+</ul>
+</div>
+<h1 id="welcomeMessage"></h1>	
+
+<h2>The owner and the Dog</h2>
+
+<p><label for="name">Enter a dog name </label><input type="text" id="name"/></p>
+<p><label for="verb1">Enter a verb </label><input type="text" id="verb1"/></p>
+<p><label for="verb2">Enter a different verb </label><input type="text" id="verb2"/></p>
+
+<p><label for="place">Enter a fun place to go </label><input type="text" id="place"/></p>
+
+<p><label for="emotion">Enter an emotion (in the passed tense)</label><input type="text" id="emotion"/></p>
+
+<p><label for="bug">Enter a type of bug </label><input type="text" id="bug"/></p>
+<p><label for="restaurant">Enter a name of a restaurant </label><input type="text" id="restaurant"/></p>
+<p><button onclick="story();">Read your story!</button></p>
+<p id="storyTime"></p>
+<p id="storyTime2"></p>
+<hr/>
+
+<p>Page by Marissa Gardner. Last modified November 14, 2018</p>
+
+<script type="text/javascript">
+			var userName = prompt("Enter your name")
+			document.getElementById("welcomeMessage").innerHTML = "Welcome " + userName + "! Enjoy my webpage!";
+			function story(){
+				var name = document.getElementById("name").value;
+				var verb1 = document.getElementById("verb1").value;
+				var verb2 = document.getElementById("verb2").value;
+				var place = document.getElementById("place").value;
+				var emotion = document.getElementById("emotion").value;
+				var bug = document.getElementById("bug").value;
+				var restaurant = document.getElementById("restaurant").value;
+					document.getElementById("storyTime").innerHTML = "Once upon a time, there was a dog named " + name + ". This dog, " + name + ", could " + verb1 + " and " + verb2 + ". He wasn't very good at either of those things, but his owner still loved him.";
+					document.getElementById("storyTime2").innerHTML = "One day, " + name +" went to " + place + ". It was the first time his owner took him there, and he was " + emotion + "! When " + name + " and his owner got to " + place + ", they found out it was closed because there was a " + bug + " infestation. That was the last straw for " + name + ". He had been waiting so long to go to " + place + " and now he couldn't even get inside. The owner felt bad for " + name + " so he decided to take him to " + restaurant + " to get dinner instead. The end."
+
+			}
+</script>	
+	</body>
+</html>
